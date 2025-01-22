@@ -47,7 +47,7 @@ const DetailsTV = () => {
             <p className='text-base font-semibold text-gray-400'>{pathname.includes("movie") ? "Movie" : "TV Series"} <sup className='font-black'>.</sup> {info.details.first_air_date.split("-")[0]} {"-"} {info.details.last_air_date && info.details.last_air_date.split("-")[0]} <sup className='font-black'>{info.details.episode_run_time.length>0 && "."}</sup> {info.details.episode_run_time[0]} {info.details.episode_run_time.length>0 &&"mins"}</p>
           </div>
 
-          <div className='flex gap-3 w-full justify-center md:justify-end'>
+          <div className='flex gap-3 md:min-w-fit justify-center md:justify-end'>
               <div>
                 <h1 className='text-sm font-bold tracking-widest text-gray-400 text-center '>SEASONS</h1>
                 <p className='text-gray-200 text-2xl font-bold text-center'>{info.details.number_of_seasons}</p>
@@ -66,9 +66,9 @@ const DetailsTV = () => {
       </div>
 
       {/* poster & trailer div */}
-      <div className='w-[100%] py-5 flex md:flex-row flex-col gap-5 md:gap-2 h-full md:h-[35%] lg:h-[70%] items-center'>
+      <div className='w-[100%] py-5 flex md:flex-row flex-col gap-5 md:gap-2 h-full md:h-[50vh] lg:h-[70vh] items-center'>
 
-        <div className='rounded overflow-hidden min-h-[60%] md:h-[100%] w-[80%] sm:w-[40%] md:w-[33%] flex items-center justify-center'>
+        <div className='rounded overflow-hidden min-h-[60%] md:h-[100%] w-[60%] sm:w-[40%] md:w-[33%] flex items-center justify-center'>
           <img className='rounded h-full w-full object-cover hover:scale-[102%] duration-200 overflow-hidden' src={`https://image.tmdb.org/t/p/original/${ info.details.poster_path || info.details.backdrop_path || info.details.profile_path})`} alt="" />
         </div>
 

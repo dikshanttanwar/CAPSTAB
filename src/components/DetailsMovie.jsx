@@ -41,7 +41,7 @@ const DetailsMovie = () => {
 
         <div className="flex flex-col sm:flex-row justify-between items-start lg:items-center gap-5">
 
-          <div className="flex flex-col w-full ">
+          <div className="flex flex-col w-full  ">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-200">{info.details.name || info.details.title || info.details.original_title || info.details.original_name}</h1>
             <p className="text-base font-semibold text-gray-400 tracking-wide mt-2">{info.details.tagline}</p>
             <p className="text-base font-semibold text-gray-400">
@@ -49,7 +49,7 @@ const DetailsMovie = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center w-full md:items-end lg:bg-transparent">
+          <div className="flex flex-col items-center md:min-w-fit md:items-end ">
             <h1 className="text-sm font-semibold text-gray-400 uppercase tracking-widest text-center mb-1">Avg Rating</h1>
             <p className="text-gray-200 text-3xl font-extrabold">
               <i className="text-[#f6ca2a] ri-star-fill"></i> {info.details.vote_average.toFixed(1)} <small className="text-gray-400 text-lg">/10</small>
@@ -62,9 +62,9 @@ const DetailsMovie = () => {
       </div>
 
       {/* Poster & Trailer div */}
-      <div className="w-[100%] py-5 flex md:flex-row flex-col gap-5 md:gap-2 h-full md:h-[35%] lg:h-[70%] items-center">
+      <div className="w-[100%] py-5 flex md:flex-row flex-col gap-5 md:gap-2 h-full md:h-[50vh] lg:h-[70vh] items-center">
 
-        <div className="rounded overflow-hidden h-[100%] w-[70%] md:w-[33%] flex items-center justify-center ">
+        <div className="rounded overflow-hidden min-h-[60%] md:h-[100%] w-[60%] sm:w-[40%] md:w-[33%] flex items-center justify-center ">
           <img className="rounded h-full w-full object-cover hover:scale-105 transition duration-200" src={`https://image.tmdb.org/t/p/original/${info.details.poster_path || info.details.backdrop_path || info.details.profile_path}`} alt="" />
         </div>
 

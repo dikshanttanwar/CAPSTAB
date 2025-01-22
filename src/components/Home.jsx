@@ -6,7 +6,7 @@ import TrendingCard from "./partials/TrendingCard";
 import Loader from "./Loader";
 
 const Home = () => {
-  document.title = "CAPSTAB | Home";
+  document.title = "CAPSTAB";
   const [wallpaper, setWallpaper] = useState("");
   const [trending, setTrending] = useState(null);
   const [upcoming, setUpcoming] = useState(null);
