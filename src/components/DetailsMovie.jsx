@@ -64,7 +64,7 @@ const DetailsMovie = () => {
       {/* Poster & Trailer div */}
       <div className="w-[100%] py-5 flex md:flex-row flex-col gap-5 md:gap-2 h-full md:h-[50vh] lg:h-[70vh] items-center">
 
-        <div className="rounded overflow-hidden min-h-[60%] md:h-[100%] w-[60%] sm:w-[40%] md:w-[33%] flex items-center justify-center ">
+        <div className="rounded overflow-hidden min-h-[55%] md:min-h-[60%] md:h-[100%] w-[90%] sm:w-[40%] md:w-[33%] flex items-center justify-center ">
           <img className="rounded h-full w-full object-cover hover:scale-105 transition duration-200" src={`https://image.tmdb.org/t/p/original/${info.details.poster_path || info.details.backdrop_path || info.details.profile_path}`} alt="" />
         </div>
 
