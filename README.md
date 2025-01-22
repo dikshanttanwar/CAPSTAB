@@ -23,6 +23,20 @@
 
 [CAPSTAB Live Website](#) *(Add your live link here)*
 
+## 🧩 Folder Structure
+
+- **Components**: Reusable UI components (e.g., Home.js, SideNavbar.js).
+- **Partials**: Shared layouts like SideNavbar and AboutUs.
+- **Pages**: Different pages for movies, TV shows, people, and details.
+
+## 🤝 Contribution
+
+- Contributions are welcome! Feel free to fork the project and submit a pull request.
+
+## 📄 License
+
+- This project is licensed under the MIT License.
+
 ## 📦 Installation
 
 1. Clone the repository:
